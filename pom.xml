@@ -36,6 +36,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.seb</groupId>
+			<artifactId>movie-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -64,12 +69,12 @@
 					<execution>
 						<id>default</id>
 						<goals>
-							<goal>build</goal>
-							<goal>push</goal>
+							
+							
 						</goals>
 					</execution>
 				</executions>
-				<configuration>				
+				<configuration>
 					<repository>bashob/da-retake</repository>
 					<tag>${project.name}</tag>
 					<buildArgs>
